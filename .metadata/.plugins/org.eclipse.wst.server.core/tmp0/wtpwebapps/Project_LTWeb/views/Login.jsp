@@ -8,13 +8,23 @@
     <title>Đăng nhập</title>
 </head>
 <body>
-    <form action="login" method="post">
-        <h2>Đăng nhập</h2>
-        
-        <c:if test="${alert != null}">
-            <h3 class="alert alert-danger">${alert}</h3>
-        </c:if>
-        
+    <h2>Đăng nhập</h2>
+
+    <!-- Hiển thị thông báo đăng ký thành công nếu có -->
+    <c:if test="${not empty sessionScope.successMessage}">
+        <div class="alert alert-success">
+            ${sessionScope.successMessage}
+        </div>
+        <!-- Xóa thông báo sau khi hiển thị -->
+        <c:remove var="successMessage" scope="session" />
+    </c:if>
+
+    <!-- Hiển thị thông báo lỗi đăng nhập nếu có -->
+    <c:if test="${alert != null}">
+        <h3 class="alert alert-danger">${alert}</h3>
+    </c:if>
+
+    <form action="${pageContext.request.contextPath}/login" method="post">
         <section>
             <div class="input-group">
                 <span class="input-group-addon">
@@ -36,9 +46,14 @@
         <button type="submit" class="btn btn-primary">Đăng nhập</button>
     </form>
 
-    <!-- Thêm phần đăng ký -->
+    <!-- Thêm liên kết đến trang đăng ký -->
     <div>
         <p>Bạn chưa có tài khoản? <a href="${pageContext.request.contextPath}/register">Đăng ký ngay</a></p>
+    </div>
+
+    <!-- Thêm liên kết đến trang quên mật khẩu -->
+    <div>
+        <p>Quên mật khẩu? <a href="${pageContext.request.contextPath}/forgotPassword">Lấy lại mật khẩu</a></p>
     </div>
 
 </body>

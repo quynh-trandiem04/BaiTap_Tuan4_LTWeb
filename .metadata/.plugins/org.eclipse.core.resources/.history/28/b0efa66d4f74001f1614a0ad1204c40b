@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quên mật khẩu</title>
+</head>
+<body>
+    <h2>Khôi phục mật khẩu</h2>
+
+    <!-- Hiển thị thông báo nếu có -->
+    <c:if test="${alert != null}">
+        <h3 class="alert alert-danger">${alert}</h3>
+    </c:if>
+
+    <form action="${pageContext.request.contextPath}/forgotPassword" method="post">
+        <section>
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <i class="fa fa-envelope"></i>
+                </span>
+                <input type="email" placeholder="Nhập email của bạn" name="email" class="form-control" required>
+            </div>
+        </section>
+
+        <button type="submit" class="btn btn-primary">Gửi yêu cầu</button>
+    </form>
+</body>
+</html>

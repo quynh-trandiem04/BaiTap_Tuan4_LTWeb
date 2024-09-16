@@ -11,6 +11,7 @@ public class User implements Serializable{
 				+ ", password=" + password + ", image=" + image + ", roleid=" + roleid + ", phone=" + phone
 				+ ", createDate=" + createDate + "]";
 	}
+	private java.sql.Date createDate;
 	private int id;
 	private String email;
 	private String username;
@@ -19,7 +20,6 @@ public class User implements Serializable{
 	private String image;
 	private int roleid;
 	private String phone;
-	private Date createDate;
 	public User() {
 		super();
 	}
@@ -36,6 +36,9 @@ public class User implements Serializable{
 		this.phone = phone;
 		this.createDate = createDate;
 	}
+	public java.sql.Date getcreateDate() {
+        return createDate;
+    }
 	public int getId() {
 		return id;
 	}
@@ -84,12 +87,9 @@ public class User implements Serializable{
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public Date getcreateDate() {
-		return createDate;
-	}
-	public void setcreateDate(Date createDate) {
-		this.createDate = createDate;
-	}
+	public void setcreateDate(java.sql.Date createDate) {
+        this.createDate = createDate;
+    }
 	public User(String email, String username, String fullname, String password, String image, int roleid,
 			String phone, Date createDate) {
 		super();

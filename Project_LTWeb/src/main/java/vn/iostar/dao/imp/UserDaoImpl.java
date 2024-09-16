@@ -32,7 +32,7 @@ public class UserDaoImpl extends vn.iostar.configs.DBConnection implements UserD
 				user.setimage(rs.getString("image"));
 				user.setRoleid(Integer.parseInt(rs.getString("roleid")));
 				user.setPhone(rs.getString("phone"));
-				user.setCreatedDate(rs.getDate("createdDate"));
+				user.setcreateDate(rs.getDate("createDate"));
 				return user;
 			}
 		} catch (Exception e) {
@@ -98,7 +98,7 @@ public class UserDaoImpl extends vn.iostar.configs.DBConnection implements UserD
 				user.setimage(rs.getString("image"));
 				user.setRoleid(Integer.parseInt(rs.getString("roleid")));
 				user.setPhone(rs.getString("phone"));
-				user.setCreatedDate(rs.getDate("createdDate"));
+				user.setcreateDate(rs.getDate("createDate"));
 				return user;
 			}
 		} catch (Exception e) {
@@ -109,7 +109,7 @@ public class UserDaoImpl extends vn.iostar.configs.DBConnection implements UserD
 
 	@Override
 	public void insert(User user) {
-		String sql = "INSERT INTO users (email, username, fullname, password, image, roleid, phone, createddate) VALUES (?,?,?,?,?,?,?,?)";
+		String sql = "INSERT INTO users (email, username, fullname, password, image, roleid, phone, createDate) VALUES (?,?,?,?,?,?,?,?)";
 				try {
 				conn = super.getConnection();
 				ps = conn.prepareStatement(sql);
@@ -120,7 +120,7 @@ public class UserDaoImpl extends vn.iostar.configs.DBConnection implements UserD
 				ps.setString(5, user.getimage());
 				ps.setInt(6,user.getRoleid());
 				ps.setString(7,user.getPhone());
-				ps.setDate(8, user.getCreatedDate());
+				ps.setDate(8, user.getcreateDate());
 				ps.executeUpdate();
 				} catch (Exception e) {e.printStackTrace();}
 		
@@ -147,7 +147,7 @@ public class UserDaoImpl extends vn.iostar.configs.DBConnection implements UserD
 								rs.getString("images"),
 								rs.getInt("roleid"),
 								rs.getString("phone"),
-								rs.getDate("createdDate")
+								rs.getDate("createDate")
 								)							
 						);
 			}

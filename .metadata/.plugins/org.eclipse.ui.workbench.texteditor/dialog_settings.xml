@@ -8,6 +8,10 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="createddate"/>
+			<item value="getCreatedDate"/>
+			<item value="createdDate"/>
+			<item value="createDate"/>
 			<item value="jps"/>
 			<item value="passWord"/>
 			<item value="fullName"/>
@@ -18,6 +22,7 @@
 			<item value="users"/>
 		</list>
 		<list key="replacehistory">
+			<item value="createDate"/>
 			<item value="password"/>
 			<item value="fullname"/>
 			<item value="username"/>

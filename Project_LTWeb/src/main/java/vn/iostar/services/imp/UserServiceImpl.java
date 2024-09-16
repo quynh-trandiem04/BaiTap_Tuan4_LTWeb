@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService{
 	        ps.setString(5, user.getEmail());
 	        ps.setInt(6, user.getRoleid());
 	        ps.setString(7, user.getPhone());
-	        ps.setTimestamp(8, new java.sql.Timestamp(user.getCreateDate().getTime()));
+	        ps.setTimestamp(8, new java.sql.Timestamp(user.getcreateDate().getTime()));
 
 	        // Thực hiện lệnh insert
 	        ps.executeUpdate();

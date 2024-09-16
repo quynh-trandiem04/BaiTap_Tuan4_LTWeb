@@ -1,0 +1,9 @@
+127.0.0.1 - - [30/Aug/2024:09:23:39 +0700] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [30/Aug/2024:09:23:40 +0700] "GET /HelloWorld/home HTTP/1.1" 404 771
+0:0:0:0:0:0:0:1 - - [30/Aug/2024:09:23:40 +0700] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [30/Aug/2024:09:23:48 +0700] "GET /HelloWorld/views/Index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [30/Aug/2024:09:23:52 +0700] "GET /HelloWorld/home?ten=huu&holot=trung HTTP/1.1" 404 771
+0:0:0:0:0:0:0:1 - - [30/Aug/2024:09:24:14 +0700] "GET /HelloWorld/views/home.jsp HTTP/1.1" 200 150
+0:0:0:0:0:0:0:1 - - [30/Aug/2024:09:24:24 +0700] "GET /HelloWorld/HelloWorldController HTTP/1.1" 500 3476
+127.0.0.1 - - [30/Aug/2024:09:24:58 +0700] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [30/Aug/2024:09:24:58 +0700] "GET /HelloWorld/home HTTP/1.1" 404 771

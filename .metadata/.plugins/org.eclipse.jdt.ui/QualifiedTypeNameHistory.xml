@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="java.net.ResponseCache"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
+    <fullyQualifiedTypeName name="vn.iostart.config.DBConnectMySQL"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="vn.iostar.services.IUserService"/>
+    <fullyQualifiedTypeName name="vn.iostar.services.impl.UserServiceImpl"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="vn.iostar.services.imp.UserServiceImpl"/>
+    <fullyQualifiedTypeName name="vn.iostar.services.UserService"/>
+    <fullyQualifiedTypeName name="vn.iostar.dao.imp.UserDaoImpl"/>
+    <fullyQualifiedTypeName name="vn.iostar.configs.DBConnection"/>
+    <fullyQualifiedTypeName name="vn.iostar.dao.UserDao"/>
+</qualifiedTypeNameHistroy>

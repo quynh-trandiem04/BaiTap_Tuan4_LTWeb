@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Upload File</title>
+</head>
+<body>
+    <h1>Hello</h1>
+
+    <!-- Form to handle logout -->
+    <form action="${pageContext.request.contextPath}/logout" method="get">
+        <button type="submit">Logout</button>
+    </form>
+
+    <br/>
+
+    <!-- File upload section -->
+    <div>Servlet Multipart</div>
+    <form method="post" action="${pageContext.request.contextPath}/multiPartServlet" enctype="multipart/form-data">
+        Choose a file: 
+        <input type="file" name="uploadFile" required />
+        <input type="submit" value="Upload" />
+    </form>
+
+</body>
+</html>

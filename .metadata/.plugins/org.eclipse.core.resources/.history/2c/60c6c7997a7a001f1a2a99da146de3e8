@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Upload File</title>
+</head>
+<body>
+    <h1>Hello</h1>
+
+	<li><c:choose>
+			<c:when test="${not empty sessionScope.account}">
+				<a href="${pageContext.request.contextPath}/member/myaccount">${sessionScope.account.fullName}</a>
+			</c:when>
+			<c:otherwise>
+				<a href="#">Guest</a>
+				<!-- Hoặc bạn có thể chuyển hướng đến trang login -->
+			</c:otherwise>
+		</c:choose> | <a href="${pageContext.request.contextPath}/logout">Đăng Xuất</a></li>
+
+
+	<br/>
+
+    <!-- File upload section -->
+    <div>Servlet Multipart</div>
+    <form method="post" action="${pageContext.request.contextPath}/multiPartServlet" enctype="multipart/form-data">
+        Choose a file: 
+        <input type="file" name="uploadFile" required />
+        <input type="submit" value="Upload" />
+    </form>
+
+</body>
+</html>

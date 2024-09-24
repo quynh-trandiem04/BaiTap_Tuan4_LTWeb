@@ -8,6 +8,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="HelloWorld"/>
 			<item value="createddate"/>
 			<item value="getCreatedDate"/>
 			<item value="createdDate"/>

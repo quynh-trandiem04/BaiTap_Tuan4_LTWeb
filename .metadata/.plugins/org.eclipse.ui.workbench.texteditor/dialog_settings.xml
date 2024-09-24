@@ -8,6 +8,8 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="form.jsp"/>
+			<item value="form"/>
 			<item value="HelloWorld"/>
 			<item value="createddate"/>
 			<item value="getCreatedDate"/>
